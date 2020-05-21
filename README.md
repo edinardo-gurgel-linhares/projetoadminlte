@@ -3,7 +3,7 @@
 
 
 ## Projeto de Adminsitração de Material
-Este projeto tem por administração de material:
+Este projeto tem por finalidade criar um ambiente para administração de material:
 
 - Integração com o AdminLTE
 - Sistema de ACL
