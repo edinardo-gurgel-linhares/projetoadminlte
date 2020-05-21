@@ -3,7 +3,7 @@
 
 ## Projeto de Criação de Escalas de Serviço
 
-Este projeto tem por finalidade criar escalas de serviço:
+Este projeto tem por administração de material:
 
 - Integração com o AdminLTE
 - Sistema de ACL
