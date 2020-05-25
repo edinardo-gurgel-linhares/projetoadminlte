@@ -61,14 +61,15 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>44</h3>
+                @inject('marca', 'App\Models\Arma\Marca')
+                  <h3>{{$marca->count()}}</h3>
 
-                <p>Diárias Registradas</p>
+                <p>Lista de Marcas</p>
               </div>
               <div class="icon">
-                <i class="ion ion-person-add"></i>
+                <i class="fas fa-copyright"></i>
               </div>
-              <a href="#" class="small-box-footer">Mais Informações<i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{route('arma.marca.lista')}}" class="small-box-footer">Mais Informações<i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -76,14 +77,31 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>65</h3>
+              @inject('fabricante', 'App\Models\Arma\Fabricante')
+                  <h3>{{$fabricante->count()}}</h3>
 
-                <p>Auditorias</p>
+                <p>Lista de Fabricantes</p>
               </div>
               <div class="icon">
-                <i class="ion ion-pie-graph"></i>
+                <i class="fas fa-cogs"></i>
               </div>
-              <a href="#" class="small-box-footer">Mais Informações<i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{route('arma.fabricante.lista')}}" class="small-box-footer">Mais Informações<i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-danger">
+              <div class="inner">
+              @inject('tipo', 'App\Models\Arma\Tipo')
+                  <h3>{{$tipo->count()}}</h3>
+
+                <p>Lista de Tipos</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-list-ul"></i>
+              </div>
+              <a href="{{route('arma.tipo.lista')}}" class="small-box-footer">Mais Informações<i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
 

@@ -24,9 +24,7 @@
     <section class="content">
     <div class ="panel panel-primary">
         <div class ='panel-body'>
-        <div class="box-header">   
-            <h3 class="box-title">Lista de Calibres | Adicionar | <a href="{{route('user.create')}}" class="fas fa-folder-plus"></a></h3>
-        </div>
+
 
         <div class="container-fluid">
             <!-- Small boxes (Stat box) -->
@@ -34,7 +32,7 @@
                     <thead>
                         <tr>
                             {{-- CABEÇALHO DA TABELA --}}
-                            <th>Calibre</th>                       
+                            <th>Fabricante</th>                       
                             <th id="center">Ações</th>
                         </tr>
                     </thead>

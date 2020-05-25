@@ -24,8 +24,12 @@
     <section class="content">
     <div class ="panel panel-primary">
         <div class ='panel-body'>
+        <div class="box-header">   
+            <h3 class="box-title">Lista de Usuários | Adicionar | 
+                <a href="{{route('user.create')}}" class="fas fa-folder-plus"></a>
+                @if(session('success')) | <span class="alert alert-success">{{session('success')}}@endif</span></h3>
 
-
+        </div>
         <div class="container-fluid">
             <!-- Small boxes (Stat box) -->
             <table id="table" class="table table-bordered table-striped">
@@ -85,7 +89,7 @@
 <script>
             $(function () {
                 $('#table').DataTable({
-                        "lengthMenu": [[5, 25, 50, -1], [5, 25, 50, "Todos"]],
+                        "lengthMenu": [[8, 25, 50, -1], [8, 25, 50, "Todos"]],
                         "language": {
                             "sEmptyTable": "Nenhum registro encontrado",
                             "sInfo": "Mostrando de _START_ até _END_ de _TOTAL_ registros",
